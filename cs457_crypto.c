@@ -80,8 +80,8 @@ uint8_t shifted_letter(uint8_t letter, int N) {
 
 }
 
-uint8_t* caesar_encrypt(uint8_t *plaintext, ushort N, size_t size) {
-	uint encoded_byte;
+uint8_t* caesar_encrypt(uint8_t *plaintext, unsigned short N, size_t size) {
+	unsigned int encoded_byte;
 	uint8_t* cipher = (uint8_t *) malloc(size * sizeof(uint8_t));
 
 	for(int i = 0; i < size - 1; i++) {
@@ -94,7 +94,7 @@ uint8_t* caesar_encrypt(uint8_t *plaintext, ushort N, size_t size) {
 	return cipher;
 }
 
-uint8_t* caesar_decrypt(uint8_t *ciphertext, ushort N, size_t size){
+uint8_t* caesar_decrypt(uint8_t *ciphertext, unsigned short N, size_t size){
 	return caesar_encrypt(ciphertext, AA_LENGTH-(N%26), size);
 }
 

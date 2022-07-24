@@ -25,9 +25,9 @@ uint8_t* otp_encrypt(uint8_t* plaintext, uint8_t* key, size_t size);
 
 uint8_t* otp_decrypt(uint8_t* ciphertext, uint8_t* key, size_t size);
 
-uint8_t* caesar_encrypt(uint8_t *plaintext, ushort N, size_t size);
+uint8_t* caesar_encrypt(uint8_t *plaintext, unsigned short N, size_t size);
 
-uint8_t* caesar_decrypt(uint8_t *ciphertext, ushort N, size_t size);
+uint8_t* caesar_decrypt(uint8_t *ciphertext, unsigned short N, size_t size);
 
 uint8_t* playfair_encrypt(unsigned char *plaintext, unsigned char** key, size_t size);
 
